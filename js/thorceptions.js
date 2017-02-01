@@ -1,11 +1,17 @@
 $(window).scroll(function(){
 	
-	if ($(this).scrollTop() > $( window ).height()){
-		$("nav").removeClass("navbar");
-		$("nav").addClass("navbar-transition");
+	if ($(this).scrollTop() >= $( 'body' ).height()){
+		$("nav").removeClass("navbar-fixed-top");
+		$("nav").removeClass("navbar-transparent");
+		$("nav").addClass("navbar-default");
+		$("nav").addClass("navbar-fixed-top");
+		
 	}else{
-		$("nav").removeClass("navbar-transition");
-		$("nav").addClass("navbar");
+		$("nav").removeClass("navbar-fixed-top");
+		$("nav").removeClass("navbar-default");
+		$("nav").addClass("navbar-transparent");
+		$("nav").addClass("navbar-fixed-top");
+	
 	}
 })
 
