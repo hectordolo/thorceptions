@@ -1,6 +1,6 @@
 $(window).scroll(function(){
 	
-	if ($(this).scrollTop() >= $( window ).height()){
+	if ($(this).scrollTop() > $( window ).height()){
 		$("nav").removeClass("navbar");
 		$("nav").addClass("navbar-transition");
 	}else{

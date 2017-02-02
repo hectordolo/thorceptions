@@ -44,6 +44,13 @@ body {
   color: #1bb4f0;
 }
 
+.navbar-transition {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+   box-shadow:none;  
+}
+
 /*
  * Pages
  */
